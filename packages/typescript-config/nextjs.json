@@ -3,11 +3,19 @@
   "display": "Next.js",
   "extends": "./base.json",
   "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false,
+    "incremental": true,
     "plugins": [{ "name": "next" }],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "allowJs": true,
     "jsx": "preserve",
-    "noEmit": true
-  }
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "noEmit": true,
+        "strict": true,
+    "target": "ES5"
+  },
+  "include": ["app", "next-env.d.ts"]
+
 }
