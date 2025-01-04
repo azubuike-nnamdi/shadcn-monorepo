@@ -3,77 +3,132 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
 <Meta title="Style Guide/Colors" />
 
 # Colors
+#### Application of the color palette brings a unified and recognizable consistency to MTN’s array of digital products and interfaces. This consistency is grounded in a set of well-defined rules about how to work with the Sunshine component library in the context of dark and light themes.
+### Color Anatomy
+#### The neutral gray family is dominant in the default themes, making use of subtle shifts in value to organize content into distinct zones. The core yellow family serves as the primary action color across all MTN products and experiences. Additional colors are used sparingly and purposefully.
 
 <div class="pt-32">
   <ColorPalette>
     <ColorItem
-      title="Banana"
-      subtitle="Yellow"
+      title="Primary"
+      subtitle="This is primary color"
       colors={{
-        "800": "#FAD161",
-        "700": "#FAD161",
-        "600": "#FAD161",
-        "500": "#FAD161",
-        "400": "#FBDA7F",
-        "300": "#FCE29C",
-        "200": "#FDEBBA",
-        "100": "#FEF4D8",
-        "50": "#FEF8E6",
+        "#FFCD05": "hsl(var(--primary))"
       }}
     />
+
     <ColorItem
-      title="Plummy"
-      subtitle="Maroon"
+      title="Secondary"
+      subtitle="This is secondary color"
       colors={{
-        "500": "#A04163",
-        "400": "#BB597C",
-        "300": "#CA7D99",
-        "200": "#D9A1B5",
-        "100": "#E8C5D2",
-        "50": "#EFD8E0",
+        "#000000": "hsl(var(--secondary))"
       }}
     />
+
     <ColorItem
-      title="Cherry"
-      subtitle="Red"
+      title="Foreground"
+      subtitle="This is foreground color"
       colors={{
-        "500": "#FF005B",
-        "400": "#FF337C",
-        "300": "#FF669D",
-        "200": "#FF99BD",
-        "100": "#FFCCDE",
-        "50": "#FFE5EF",
+        "foreground": "hsl(var(--primary))",
       }}
     />
+
     <ColorItem
-      title="Pistachio"
-      subtitle="Green"
+      title="Card"
+      subtitle="This is card color"
       colors={{
-        "500": "#7AFAD4",
-        "400": "#93FBDC",
-        "300": "#ABFCE4",
-        "200": "#C4FDEC",
-        "100": "#DCFEF4",
-        "50": "#E9FEF8",
+        "card": "hsl(var(--card))",
+        "card-foreground": "hsl(var(--card-foreground))",
       }}
     />
+
     <ColorItem
-      title="Raisin"
-      subtitle="Black"
+      title="Popover"
+      subtitle="This is popover color"
       colors={{
-        "500": "#27272B",
-        "400": "#47474E",
-        "300": "#666671",
-        "200": "#878792",
-        "100": "#AAAAB2",
-        "50": "#BBBBC1",
+        "popover": "hsl(var(--popover))",
+        "popover-foreground": "hsl(var(--popover-foreground))",
       }}
     />
+
     <ColorItem
-      title="Coconut"
-      subtitle="White"
+      title="Muted"
+      subtitle="This is muted color"
       colors={{
-        "": "#FAF3EC",
+        "muted": "hsl(var(--muted))",
+        "muted-foreground": "hsl(var(--muted-foreground))",
+      }}
+    />
+
+    <ColorItem
+      title="Accent"
+      subtitle="This is accent color"
+      colors={{
+        "accent": "hsl(var(--accent))",
+        "accent-foreground": "hsl(var(--accent-foreground))",
+      }}
+    />
+  
+    <ColorItem
+      title="Destructive"
+      subtitle="This is destructive color"
+      colors={{
+        "destructive": "hsl(var(--destructive))",
+        "destructive-foreground": "hsl(var(--destructive-foreground))",
+      }}
+    />
+
+    <ColorItem
+      title="Momo"
+      subtitle="This is momo color"
+      colors={{
+        "momo": "hsl(var(--momo))",
+        "momo-foreground": "hsl(var(--momo-foreground))",
+      }}
+    />
+
+    <ColorItem
+      title="Border"
+      subtitle="This is border color"
+      colors={{
+        "border": "hsl(var(--border))",
+        "border-foreground": "hsl(var(--border-foreground))",
+      }}
+    />
+
+    <ColorItem
+      title="Input"
+      subtitle="This is input color"
+      colors={{
+        "input": "hsl(var(--input))"
+      }}
+    />
+
+    <ColorItem
+      title="Ring"
+      subtitle="This is ring color"
+      colors={{
+        "ring": "hsl(var(--ring))"
+      }}
+    />
+
+    <ColorItem
+      title="Radius"
+      subtitle="This is radius color"
+      colors={{
+        "radius": "hsl(var(--radius))"
+      }}
+    />
+
+     <ColorItem
+      title="Chart"
+      subtitle="This is chart colors"
+      colors={{
+        "chart-1": "hsl(var(--chart-1))",
+        "chart-2": "hsl(var(--chart-2))",
+        "chart-3": "hsl(var(--chart-3))",
+        "chart-4": "hsl(var(--chart-4))",
+        "chart-5": "hsl(var(--chart-5))",
       }}
     />
   </ColorPalette>

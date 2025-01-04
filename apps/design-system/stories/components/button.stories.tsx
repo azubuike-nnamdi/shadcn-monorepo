@@ -18,7 +18,7 @@ const meta: Meta<typeof Button> = {
     variant: {
       control: 'select',
       description: 'Button variants',
-      options: ['default', 'destructive', 'outline', 'secondary', 'ghost', 'link'],
+      options: ['default', 'momo', 'destructive', 'outline', 'secondary', 'ghost', 'link'],
     },
     size: {
       control: 'select',
@@ -38,6 +38,17 @@ export const Default: Story = {
     disabled: false,
     onClick: action('default clicked'),
     children: 'Default button',
+    className: 'shadow-lg',
+  },
+};
+
+export const Momo: Story = {
+  args: {
+    variant: 'momo',
+    size: 'sm',
+    disabled: false,
+    onClick: action('default clicked'),
+    children: 'Momo button',
     className: 'shadow-lg',
   },
 };
