@@ -1,18 +1,19 @@
 import type { Config } from "tailwindcss"
 import tailwindcssAnimate from "tailwindcss-animate"
 
-
 const config = {
   darkMode: ["class"],
   content: [
-    "app/**/*.{ts,tsx}",
-    "components/**/*.{ts,tsx}",
-    "../../packages/ui/src/components/**/*.{ts,tsx}",
+    "app/**/*.{js,ts,jsx,tsx,mdx}",
+    "components/**/*.{js,ts,jsx,tsx,mdx}",
+    "../../packages/ui/src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    momo: {
-      DEFAULT: 'hsl(var(--momo))',
-      foreground: 'hsl(var(--momo-foreground))',
+    screens: {
+      xs: '320px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
     },
     extend: {
       colors: {
@@ -37,6 +38,10 @@ const config = {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
+        momo: {
+          DEFAULT: 'hsl(var(--momo))',
+          foreground: 'hsl(var(--momo-foreground))',
+        },
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
@@ -49,6 +54,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        sans: ['var(--mtn-brighter-sans)'],
+        inter: ['var(--font-inter)'],
       },
       borderRadius: {
         lg: "var(--radius)",
