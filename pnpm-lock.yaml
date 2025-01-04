@@ -26,6 +26,9 @@ importers:
 
   apps/design-system:
     dependencies:
+      '@storybook/addon-actions':
+        specifier: ^8.4.7
+        version: 8.4.7(storybook@8.4.7(prettier@3.4.2))
       '@workspace/ui':
         specifier: workspace:*
         version: link:../../packages/ui
